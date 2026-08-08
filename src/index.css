@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #050505; /* Very dark background */
+    --gold: #d4af37; /* Gold accent */
+    --gold-bright: #f3e5ab; /* Brighter gold for hover/glow */
+  }
+
+  body {
+    background-color: var(--background);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll from confetti/balloons */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-cursive {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+  }
+  
+  .border-gold {
+    border-color: var(--gold);
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+}
